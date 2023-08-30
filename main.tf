@@ -25,7 +25,7 @@ resource "aws_security_group" "main" {
     name = "${var.component}-${var.env}-sg"
   }
 }
-resource "aws_ealsticache_replication_group" "main" {
+resource "aws_elasticache_replication_group" "main" {
   replication_group_id       = "${var.component}-${var.env}"
   description                = "${var.component}-${var.env}"
   node_type                  = var.node_type
