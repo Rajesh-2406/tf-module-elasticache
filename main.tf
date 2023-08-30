@@ -38,4 +38,5 @@ resource "aws_elasticache_replication_group" "main" {
   security_group_ids         = [aws_security_group.main.id]
   kms_key_id                 = var.kms_key_arn
   at_rest_encryption_enabled = true
+
 }
